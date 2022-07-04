@@ -1,0 +1,60 @@
+body{
+    font-family: 'Playfair Display';
+
+}
+
+.flex{
+    display: flex;
+    
+}
+img{
+    position: absolute;
+}
+.container-fluid{
+    color: white;
+}
+
+#title{
+    text-align: left;
+    padding: 3% 7%;
+   
+  
+}
+.navbar{
+    color: aliceblue;
+}
+.navbar-brand{
+    font-size: 3rem;
+    padding: 0 auto auto 0;
+    font-weight: bold;
+    
+    
+}
+.nav-item {
+    padding: 0 18px 0;
+    font-family: 'Montserrat-light';
+    color: black;
+    font-weight: lighter;
+}
+
+.syncbutton{
+    color: black;
+   
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 165px;  
+}
+
+#donutchart{
+    z-index: 1;
+    background-image: url('C:\Users\mirsa\web deveopement\My Portfolio\FocAce\Images\3898677.jpg');
+
+}
+
+.backgroundimage{
+    background-image: url('C:\Users\mirsa\web deveopement\My Portfolio\FocAce\Images\3898677.jpg');
+}
+.invisble{
+    visibility: hidden;
+}
