@@ -2,64 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer</title>
-
-    <!-- External css -->
-
-    <link rel="stylesheet" href="C:\Users\mirsa\OneDrive\Desktop\FocAce\timer\timer.css">
-<!-- Font awesome -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script
-src="https://kit.fontawesome.com/009dba682e.js"
-crossorigin="anonymous"
-></script>
-
-<!-- bootstrap -->
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- External js -->
-
-
-<script src="C:\Users\mirsa\web deveopement\My Portfolio\FocAce\style\logic.js"></script>
-
+      src="https://kit.fontawesome.com/009dba682e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="timer.css">
+    <title>Pomodoro Timer</title>
 </head>
-<body style="background-color: darkblue;" onload="template()">
-  <div class="container text-center">
-<!-- HEading -->
-
-
-<h1 class="text-center my-5 heading">Timer</h1>
-
-
-<!-- Main Timer -->
-
-<div class="container timer">
-    <div class="row">
-        <div class="col-5"><h4 id="minutes"></h4>
+<body>
+    <h1>Pomodoro Timer</h1>
+    <div id="container">
+        <!-- <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p> -->
+        <!--Work Timer-->
+        <div id="work-timer" class="timer">
+            <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
         </div>
-        <div class="col-2">
-            <h4>:</h4>
-        </div>
-        <div class="col-5">
-            <h4 id="seconds">
 
-            </h4>
+        <!--Cycle Counter-->
+        <p id="counter" class="timer">0</p>
+
+        <!--Break Timer-->
+        <div id="break-timer" class="timer">
+            <p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
         </div>
+        <button id="start" class="btn btn-primary text-nowrap"><i class="fa-solid fa-play"></i></button>
+        <button id="stop" class="btn btn-primary text-nowrap"><i class="fa-solid fa-pause"></i></button>
+        <button id="reset" class="btn btn-primary text-nowrap"><i class="fa-solid  fa-arrow-rotate-left"></i></button>
     </div>
-</div>
-
-<!-- start and reset btn -->
-
-<div class="container d-flex justify-content-center align-items-center my-5" >
-    <button class="btn" onclick="start()"><i class="fas fa-play fa-2x prefers-reduced-motion"></i></button>
-    <a href="timer.html"><i class="fas fa-redo-alt fa-2x"></i></a>
-</div>
-
-  </div>  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="C:\Users\mirsa\OneDrive\Desktop\FocAce\timer\logic.js"></script>
 </body>
 </html>
